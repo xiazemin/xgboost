@@ -18,5 +18,17 @@ xgboost是大规模并行boosted tree的工具，它是目前最快最好的开�
 
 （3）.Objective for Tree Ensemble 得到学习目标函数
 
+![](/assets/gbdt3.png)
+
+这里是构造一个目标函数，然后我们要做的就是去尝试优化这个目标函数。读到这里，感觉与gbdt好像没有什么区别，确实如此，不过在后面就能看到他们的不同了（构造（学习）模型参数）。
+
+
+
+3.Gradient Boosting \(How do we Learn，如何学习\) 
+
+（1）.So How do we Learn? 
+
+目标函数
+
 
 
