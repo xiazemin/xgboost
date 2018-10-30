@@ -9,4 +9,5 @@
 * [参考文档](can-kao-wen-dang.md)
 * [GB、GBDT、xgboost](gbgbdtxgboost.md)
 * [xgboost原理](xgboostyuan-li.md)
+* [回归树](hui-gui-shu.md)
 
