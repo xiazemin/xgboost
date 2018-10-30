@@ -4,6 +4,8 @@
 
 [https://xgboost.readthedocs.io/en/latest/python/python\_api.html\#module-xgboost.sklearn](https://xgboost.readthedocs.io/en/latest/python/python_api.html#module-xgboost.sklearn)
 
+https://cran.r-project.org/web/packages/xgboost/index.html
+
 XGBoost风靡Kaggle、天池、DataCastle、Kesci等国内外数据竞赛平台，是比赛夺冠的必备大杀器。
 
 传统GBDT以CART作为基分类器，xgboost还支持线性分类器，这个时候xgboost相当于带L1和L2正则化项的逻辑斯蒂回归（分类问题）或者线性回归（回归问题）。
@@ -27,8 +29,6 @@ xgboost工具支持并行。boosting不是一种串行的结构吗?怎么并行�
 Boosting分类器属于集成学习模型，它基本思想是把成百上千个分类准确率较低的树模型组合起来，成为一个准确率很高的模型。这个模型会不断地迭代，每次迭代就生成一颗新的树。对于如何在每一步生成合理的树，大家提出了很多的方法，我们这里简要介绍由Friedman提出的Gradient Boosting Machine。它在生成每一棵树的时候采用梯度下降的思想，以之前生成的所有树为基础，向着最小化给定目标函数的方向多走一步。在合理的参数设置下，我们往往要生成一定数量的树才能达到令人满意的准确率。在数据集较大较复杂的时候，我们可能需要几千次迭代运算，如果生成一个树模型需要几秒钟，那么这么多迭代的运算耗时，应该能让你专心地想静静……
 
 。xgboost的全称是eXtreme Gradient Boosting。正如其名，它是Gradient Boosting Machine的一个c++实现，作者为正在华盛顿大学研究机器学习的大牛陈天奇。他在研究中深感自己受制于现有库的计算速度和精度，因此在一年前开始着手搭建xgboost项目，并在去年夏天逐渐成型。xgboost最大的特点在于，它能够自动利用CPU的多线程进行并行，同时在算法上加以改进提高了精度。它的处女秀是Kaggle的希格斯子信号识别竞赛，因为出众的效率与较高的预测准确度在比赛论坛中引起了参赛选手的广泛关注，在1700多支队伍的激烈竞争中占有一席之地。随着它在Kaggle社区知名度的提高，最近也有队伍借助xgboost在比赛中夺得第一。
-
-
 
 为了方便大家使用，陈天奇将xgboost封装成了python库。
 
