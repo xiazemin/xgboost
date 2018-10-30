@@ -2,7 +2,7 @@
 
 [https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/](https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/)
 
-https://xgboost.readthedocs.io/en/latest/python/python\_api.html\#module-xgboost.sklearn
+[https://xgboost.readthedocs.io/en/latest/python/python\_api.html\#module-xgboost.sklearn](https://xgboost.readthedocs.io/en/latest/python/python_api.html#module-xgboost.sklearn)
 
 XGBoost风靡Kaggle、天池、DataCastle、Kesci等国内外数据竞赛平台，是比赛夺冠的必备大杀器。
 
@@ -21,4 +21,14 @@ Shrinkage（缩减），相当于学习速率（xgboost中的eta）。xgboost在
 xgboost工具支持并行。boosting不是一种串行的结构吗?怎么并行的？注意xgboost的并行不是tree粒度的并行，xgboost也是一次迭代完才能进行下一次迭代的（第t次迭代的代价函数里包含了前面t-1次迭代的预测值）。xgboost的并行是在特征粒度上的。我们知道，决策树的学习最耗时的一个步骤就是对特征的值进行排序（因为要确定最佳分割点），xgboost在训练之前，预先对数据进行了排序，然后保存为block结构，后面的迭代中重复地使用这个结构，大大减小计算量。这个block结构也使得并行成为了可能，在进行节点的分裂时，需要计算每个特征的增益，最终选增益最大的那个特征去做分裂，那么各个特征的增益计算就可以开多线程进行。
 
 可并行的近似直方图算法。树节点在进行分裂时，我们需要计算每个特征的每个分割点对应的增益，即用贪心法枚举所有可能的分割点。当数据无法一次载入内存或者在分布式情况下，贪心算法效率就会变得很低，所以xgboost还提出了一种可并行的近似直方图算法，用于高效地生成候选的分割点。
+
+，randomForest, gbm和glmnet是三个尤其流行的R包，它们在Kaggle的各大数据挖掘竞赛中的出现频率独占鳌头，被坊间人称为R数据挖掘包中的三驾马车。根据我的个人经验，gbm包比同样是使用树模型的randomForest包占用的内存更少，同时训练速度较快，尤其受到大家的喜爱。在python的机器学习库sklearn里也有GradientBoostingClassifier的存在。
+
+
+
+Boosting分类器属于集成学习模型，它基本思想是把成百上千个分类准确率较低的树模型组合起来，成为一个准确率很高的模型。这个模型会不断地迭代，每次迭代就生成一颗新的树。对于如何在每一步生成合理的树，大家提出了很多的方法，我们这里简要介绍由Friedman提出的Gradient Boosting Machine。它在生成每一棵树的时候采用梯度下降的思想，以之前生成的所有树为基础，向着最小化给定目标函数的方向多走一步。在合理的参数设置下，我们往往要生成一定数量的树才能达到令人满意的准确率。在数据集较大较复杂的时候，我们可能需要几千次迭代运算，如果生成一个树模型需要几秒钟，那么这么多迭代的运算耗时，应该能让你专心地想静静……
+
+
+
+
 
