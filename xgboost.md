@@ -46,5 +46,9 @@ xgboost是大规模并行boosted tree的工具，它是目前最快最好的开�
 
 （4）.Our New Goal 得到了新的目标函数
 
-![](/assets/gbdt8.png)
+![](/assets/gbdt8.png)从这里就可以看出xgboost的不同了，目标函数保留了泰勒展开的二次项。
+
+![](/assets/gbdt9.png)（5）.Refine the definition of tree 重新定义每棵树
+
+![](/assets/gbdt10.png)
 
