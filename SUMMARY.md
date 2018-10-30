@@ -8,4 +8,5 @@
 * [xgboost](xgboost.md)
 * [参考文档](can-kao-wen-dang.md)
 * [GB、GBDT、xgboost](gbgbdtxgboost.md)
+* [xgboost原理](xgboostyuan-li.md)
 
