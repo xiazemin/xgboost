@@ -12,7 +12,11 @@ xgboost是大规模并行boosted tree的工具，它是目前最快最好的开�
 
 （1）.Regression Tree \(CART\)回归树
 
-![](/assets/gdbt1.png)（2）.Regression Tree Ensemble 回归树集成 
+![](/assets/gdbt1.png)（2）.Regression Tree Ensemble 回归树集成
 
-![](/assets/gdbt2.png)
+![](/assets/gdbt2.png)在上面的例子中，我们用两棵树来进行预测。我们对于每个样本的预测结果就是每棵树预测分数的和。
+
+
+
+（3）.Objective for Tree Ensemble 得到学习目标函数 
 
