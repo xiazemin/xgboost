@@ -1,4 +1,6 @@
-https://xgboost.readthedocs.io/en/latest/parameter.html\#general-parameters
+[https://xgboost.readthedocs.io/en/latest/parameter.html\#general-parameters](https://xgboost.readthedocs.io/en/latest/parameter.html#general-parameters)
+
+https://www.analyticsvidhya.com/blog/2016/03/complete-guide-parameter-tuning-xgboost-with-codes-python/
 
 XGBoost风靡Kaggle、天池、DataCastle、Kesci等国内外数据竞赛平台，是比赛夺冠的必备大杀器。
 
