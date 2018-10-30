@@ -12,7 +12,7 @@ xgboost是大规模并行boosted tree的工具，它是目前最快最好的开�
 
 （1）.Regression Tree \(CART\)回归树
 
----
+![](/assets/gdbt1.png)
 
 
 
