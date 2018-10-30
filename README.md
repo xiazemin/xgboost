@@ -34,9 +34,7 @@
 
 模型极易出现过拟合，没什么用处。因此工业上在使用决策树模型来建模数据时，往往要加上一些限制和约束。比如说限制树的深度、限制树叶子节点的个数、为模型参数加上L2或者L1的显式正则，更或者我们使用多棵而不是仅仅使用单棵树来建模数据。
 
-
-
-        使用多棵树来建模时，树的组合方式又有不同的选择，比如：boosting，bagging。使用Boosting来组合决策树的模型我们称之为GBDT\(gradient boosting decision tree\)；而使用bagging方式来组合决策树的模型我们则称之为random Forest\(随机森林\)。这也是工业界最常使用的两种树模型,我们统称为TreebasedModel......
+使用多棵树来建模时，树的组合方式又有不同的选择，比如：boosting，bagging。使用Boosting来组合决策树的模型我们称之为GBDT\\(gradient boosting decision tree\\)；而使用bagging方式来组合决策树的模型我们则称之为random Forest\\(随机森林\\)。这也是工业界最常使用的两种树模型,我们统称为TreebasedModel......
 
 
 
