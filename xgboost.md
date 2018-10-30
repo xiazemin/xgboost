@@ -66,5 +66,7 @@ xgboost是大规模并行boosted tree的工具，它是目前最快最好的开�
 
 ![](/assets/gbdt13.png)
 
-![](/assets/import14.png)
+![](/assets/import14.png)The Structure Score Calculation： 
+
+![](/assets/gbdt15.png)
 
