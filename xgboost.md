@@ -56,17 +56,15 @@ xgboost是大规模并行boosted tree的工具，它是目前最快最好的开�
 
 ![](/assets/import11.png)从图中可以看出，xgboost算法中对树的复杂度项包含了两个部分，一个是叶子节点总数，一个是叶子节点得分L2正则化项，针对每个叶结点的得分增加L2平滑，目的也是为了避免过拟合。
 
+（7）.Revisit the Objectives 更新
 
-
-（7）.Revisit the Objectives 更新 
-
-![](/assets/gbdt12.png)注意，这里优化目标的n-&gt;T,T是叶子数。??? 
+![](/assets/gbdt12.png)注意，这里优化目标的n-&gt;T,T是叶子数。???
 
 论文中定义了：Define I j = {i\|q\(x i \) = j} as the instance set of leaf j.这一步是由于xgb加了两个正则项，一个是叶子节点个数\(T\),一个是叶节点分数\(w\). 原文中的等式4，加了正则项的目标函数里就出现了两种累加，一种是i-&gt;n（样本数）,一种是j-&gt;T（叶子节点数）。这步转换是为了统一目标函数中的累加项，Ij是每个叶节点j上的样本集合。
 
+（8）.The Structure Score 这个score是用来评价树结构的。根据目标函数得到（见论文公式\(4\)、\(5\)、\(6\)），用于切分点查找算法。
 
+![](/assets/gbdt13.png)
 
-（8）.The Structure Score 这个score是用来评价树结构的。根据目标函数得到（见论文公式\(4\)、\(5\)、\(6\)），用于切分点查找算法。 
-
-![](/assets/gbdt13.png)
+![](/assets/import14.png)
 
