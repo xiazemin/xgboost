@@ -2,11 +2,7 @@
 
 ![](/assets/li.png)
 
-其中yi表示第
-
-_i_
-
-个样本的类标签，
+其中yi表示第_i_个样本的类标签，
 
 ![](http://dl2.iteye.com/upload/attachment/0116/5151/bf77f456-edb6-38f5-b56b-534f8cc5ca3e.png)
 
