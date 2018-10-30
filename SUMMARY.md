@@ -7,4 +7,5 @@
 * [GBDT 梯度提升决策树](gbdt-ti-du-ti-sheng-jue-ce-shu.md)
 * [xgboost](xgboost.md)
 * [参考文档](can-kao-wen-dang.md)
+* [GB、GBDT、xgboost](gbgbdtxgboost.md)
 
