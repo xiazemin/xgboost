@@ -70,5 +70,7 @@ xgboost是大规模并行boosted tree的工具，它是目前最快最好的开�
 
 ![](/assets/gbdt15.png)（9）切分点查找算法
 
-![](/assets/gbdt16.png)
+![](/assets/gbdt16.png)如上图可见Gain还加了一个叶子节点复杂度项，有点类似CART的剪枝。
+
+
 
