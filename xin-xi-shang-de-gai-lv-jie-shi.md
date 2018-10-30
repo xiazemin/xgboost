@@ -18,7 +18,14 @@
 
 ![](http://dl2.iteye.com/upload/attachment/0116/4630/1b314445-71bb-38ca-8809-465aec268422.png)求原函数的最大值等价于求该函数的最小值。
 
+由于该函数对参数 ![](http://dl2.iteye.com/upload/attachment/0116/5155/efae5ffd-c634-3f53-8932-405109d60ce7.png) 的二阶导大于0恒成立，如下：
+
+  
 
 
+![](http://dl2.iteye.com/upload/attachment/0116/4632/515c29c5-f75a-32f7-933b-33fce0c1f6b8.png)
 
+        因此，这是一个有且仅有一个最小值的凸函数，为求极值对应的函数参数，只需求其一阶导等于0即可，即求 pi 使得：
+
+![](http://dl2.iteye.com/upload/attachment/0116/4634/af0a16eb-bcc4-3eaf-8eb7-2c980d5fd093.png)
 
