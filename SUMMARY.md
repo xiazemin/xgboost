@@ -5,4 +5,5 @@
 * [决策树实例](jue-ce-shu-shi-li.md)
 * [认识决策树](ren-shi-jue-ce-shu.md)
 * [GBDT 梯度提升决策树](gbdt-ti-du-ti-sheng-jue-ce-shu.md)
+* [xgboost](xgboost.md)
 
